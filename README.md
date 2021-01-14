@@ -4,6 +4,22 @@ Recently, various methods applied transformers to point clouds: [PCT: Point Clou
 
 
 ## Classification
+
+### Environment 
+```
+conda create -n pointtransformer python=3.7 
+
+conda activate pointtransformer
+
+pip install omegaconf tqdm -i https://pypi.tuna.tsinghua.edu.cn/simple 
+
+pip install hydra-core --upgrade --pre
+
+conda install pytorch=1.2.0 torchvision cudatoolkit=10.0 -c pytorch 
+
+```
+
+
 ### Data Preparation
 Download alignment **ModelNet** [here](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip) and save in `modelnet40_normal_resampled`.
 
